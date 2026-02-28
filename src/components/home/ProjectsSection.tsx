@@ -1,7 +1,6 @@
 import { useRef } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { ExternalLink, Github, Terminal } from 'lucide-react';
-import { useSound } from '../../context/SoundContext';
 
 const projectsData = [
     {
@@ -43,7 +42,6 @@ const projectsData = [
 ];
 
 export function ProjectsSection() {
-    const { playHover, playClick } = useSound();
     const containerRef = useRef<HTMLDivElement>(null);
 
     return (

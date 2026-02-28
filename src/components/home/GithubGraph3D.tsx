@@ -1,8 +1,7 @@
-import React, { useMemo, useRef, useState } from 'react';
+import { useMemo, useRef, useState } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { OrbitControls, Text } from '@react-three/drei';
+import { OrbitControls } from '@react-three/drei';
 import * as THREE from 'three';
-import { motion } from 'framer-motion';
 
 // Generate mock contribution data (52 weeks * 7 days)
 const generateMockData = () => {
@@ -37,7 +36,7 @@ function Box({ position, intensity, index }: { position: [number, number, number
     const targetScale = hovered ? 1.5 : 1;
     const targetY = hovered ? position[1] + 0.5 : position[1] + (intensity > 0 ? intensity * 0.2 : 0);
 
-    useFrame((state, delta) => {
+    useFrame((state) => {
         if (meshRef.current) {
             meshRef.current.scale.lerp(new THREE.Vector3(targetScale, hovered ? targetScale * 1.5 : intensity * 0.4 + 0.1, targetScale), 0.1);
             meshRef.current.position.y = THREE.MathUtils.lerp(meshRef.current.position.y, targetY, 0.1);
@@ -54,7 +53,7 @@ function Box({ position, intensity, index }: { position: [number, number, number
             ref={meshRef}
             position={[position[0], 0, position[2]]}
             onPointerOver={(e) => { e.stopPropagation(); setHovered(true); document.body.style.cursor = 'pointer'; }}
-            onPointerOut={(e) => { setHovered(false); document.body.style.cursor = 'auto'; }}
+            onPointerOut={() => { setHovered(false); document.body.style.cursor = 'auto'; }}
         >
             <boxGeometry args={[0.8, 1, 0.8]} />
             <meshStandardMaterial

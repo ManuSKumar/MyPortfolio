@@ -16,12 +16,10 @@ import * as THREE from 'three';
 import { useSound } from '../../../context/SoundContext';
 import photo from '../../../assets/photo.jpeg';
 
-declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      meshLineGeometry: any;
-      meshLineMaterial: any;
-    }
+declare module '@react-three/fiber' {
+  interface ThreeElements {
+    meshLineGeometry: any;
+    meshLineMaterial: any;
   }
 }
 
@@ -348,7 +346,9 @@ function Band({ maxSpeed = 50, minSpeed = 0, isMobile = false, onClose }: BandPr
         </RigidBody>
       </group>
       <mesh ref={band}>
+        {/* @ts-ignore */}
         <meshLineGeometry />
+        {/* @ts-ignore */}
         <meshLineMaterial
           color="#1e293b" // slate-800
           depthTest={false}
