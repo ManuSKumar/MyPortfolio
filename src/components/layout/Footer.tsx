@@ -38,7 +38,7 @@ export function Footer() {
                             </li>
                             <li className="flex items-center gap-3 text-slate-600 dark:text-slate-400 hover:text-neon-blue transition-colors">
                                 <Linkedin size={18} />
-                                <a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+                                <a href="https://www.linkedin.com/in/manu-s-kumar-07003317a/" target="_blank" rel="noreferrer">LinkedIn</a>
                             </li>
                         </ul>
                     </div>

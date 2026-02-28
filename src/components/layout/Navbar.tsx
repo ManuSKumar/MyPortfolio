@@ -106,7 +106,7 @@ export function Navbar() {
                             {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
                         </button>
                         <a
-                            href="https://linkedin.com"
+                            href="https://www.linkedin.com/in/manu-s-kumar-07003317a/"
                             target="_blank"
                             rel="noreferrer"
                             className="hover:text-neon-blue transition-colors cursor-pointer"

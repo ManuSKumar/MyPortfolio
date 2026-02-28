@@ -42,7 +42,7 @@ export function ContactSection() {
 
                     <div className="mt-16 flex justify-center gap-8">
                         <a
-                            href="https://linkedin.com"
+                            href="https://www.linkedin.com/in/manu-s-kumar-07003317a/"
                             target="_blank"
                             rel="noreferrer"
                             className="group flex flex-col items-center gap-2 text-slate-500 hover:text-neon-blue transition-colors"

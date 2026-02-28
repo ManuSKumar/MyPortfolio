@@ -7,7 +7,7 @@ const projectsData = [
         title: "RupeeTrace",
         description: "A comprehensive personal finance application built with React Native and WatermelonDB. Features include expense tracking, income management, and a dedicated Lending & Borrowing (Debts) module.",
         tech: ["React Native", "TypeScript", "WatermelonDB"],
-        github: "https://github.com/yourusername/rupeetrace",
+        github: "https://github.com/ManuSKumar/rupeetrace",
         live: "#",
         color: "from-green-500 to-emerald-700",
         featured: true
@@ -16,7 +16,7 @@ const projectsData = [
         title: "Imposter Game",
         description: "A fully functional multiplayer online Imposter Game featuring roles, game flow, and real-time multiplayer functionality. Designed with a funky, vibrant presentation and smooth animations.",
         tech: ["React 18", "Socket.io", "Tailwind CSS", "Framer Motion"],
-        github: "https://github.com/yourusername/imposter-game",
+        github: "https://github.com/ManuSKumar/imposter-game",
         live: "#",
         color: "from-red-500 to-orange-600",
         featured: true
@@ -25,7 +25,7 @@ const projectsData = [
         title: "Anti-Gravity Mancala",
         description: "A 3D anti-gravity Mancala game set in a floating Victorian house. Built with Unity, it features physics-based gameplay, a unique zero-gravity mechanic, and multiplayer functionality using Mirror.",
         tech: ["Unity 3D", "C#", "Mirror", "URP"],
-        github: "https://github.com/yourusername/anti-gravity-mancala",
+        github: "https://github.com/ManuSKumar/anti-gravity-mancala",
         live: "#",
         color: "from-purple-500 to-indigo-700",
         featured: false
@@ -34,7 +34,7 @@ const projectsData = [
         title: "AI Chatbot Integration",
         description: "An AI chatbot integrated into a portfolio website capable of reading and answering questions based on a provided resume PDF file. Powered by the Groq SDK and a secure Node.js backend.",
         tech: ["React", "Node.js", "Express", "Groq SDK"],
-        github: "https://github.com/yourusername/portfolio-chatbot",
+        github: "https://github.com/ManuSKumar/portfolio-chatbot",
         live: "#",
         color: "from-blue-500 to-cyan-600",
         featured: false
@@ -159,7 +159,7 @@ export function ProjectsSection() {
                     className="mt-20 text-center"
                 >
                     <a 
-                        href="https://github.com/yourusername" 
+                        href="https://github.com/ManuSKumar" 
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 text-slate-500 hover:text-slate-900 dark:hover:text-white transition-colors group"

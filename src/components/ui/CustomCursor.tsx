@@ -62,13 +62,15 @@ export function CustomCursor() {
     return (
         <>
             <style>{`
-        /* Hide default cursor globally */
-        body, *, a, button {
-          cursor: none !important;
+        /* Hide default cursor only on devices with a mouse */
+        @media (pointer: fine) {
+          body, *, a, button {
+            cursor: none !important;
+          }
         }
       `}</style>
             <motion.div
-                className="fixed top-0 left-0 z-[100] rounded-full mix-blend-difference pointer-events-none flex items-center justify-center border-2 border-white"
+                className="hidden md:flex fixed top-0 left-0 z-[100] rounded-full mix-blend-difference pointer-events-none items-center justify-center border-2 border-white"
                 style={{
                     x: cursorXSpring,
                     y: cursorYSpring,
